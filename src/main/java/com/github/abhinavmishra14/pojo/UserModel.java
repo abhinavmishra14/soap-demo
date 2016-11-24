@@ -17,10 +17,15 @@
  */
 package com.github.abhinavmishra14.pojo;
 
+import java.io.Serializable;
+
 /**
  * The Class UserModel.
  */
-public class UserModel {
+public class UserModel implements Serializable{
+
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = -3529671170359212999L;
 
 	/** The user name. */
 	private String userName;
