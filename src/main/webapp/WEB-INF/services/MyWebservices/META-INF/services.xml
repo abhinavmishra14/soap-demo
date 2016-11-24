@@ -1,0 +1,21 @@
+<serviceGroup>
+	<service name="MyWebservices" targetNamespace="http://webservice.abhinavmishra14.github.com">
+		<description>MyWebservices services</description>
+		<schema schemaNamespace="http://webservice.abhinavmishra14.github.com" />
+		<parameter name="ServiceClass" locked="false">com.github.abhinavmishra14.services.MyWebservices</parameter>
+		<parameter name="enableMTOM">true</parameter>
+
+		<operation name="healthCheck">
+			<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+		</operation>
+		
+		<operation name="authenticateUserPojo">
+			<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+		</operation>
+		
+		<operation name="authenticateUser">
+			<messageReceiver class="org.apache.axis2.rpc.receivers.RPCMessageReceiver" />
+		</operation>
+		
+	</service>
+</serviceGroup>
